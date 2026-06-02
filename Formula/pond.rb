@@ -5,13 +5,13 @@
 class Pond < Formula
   desc "Lossless storage and hybrid search for AI agent sessions, across every agentic client."
   homepage "https://github.com/tenequm/homebrew-tap"
-  version "0.2.3"
+  version "0.2.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.3/pond-aarch64-apple-darwin.tar.xz"
-      sha256 "792b1f31956fc54138a73cd5675e33156636cb6d1899f33e1c7effcfbadb6636"
+      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.6/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "f73ec37c472520877a25cc0eefa05c7cd982fcacca1d7e93f57a5c016ae16ca2"
 
       define_method(:install) do
         bin.install "pond"
@@ -21,15 +21,15 @@ class Pond < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.3/pond-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e734aec668e9663833d8f57f1744786731b73563ed17e231bbe40cb02a031c74"
+      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.6/pond-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b4e3d73207797c3887fa9478150cd6701d59e8b66ef71460dd647b688a3010c1"
       define_method(:install) do
         bin.install "pond"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.3/pond-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e6ba4e55094b15523f38a1bc0a6bbc07fc9fac8d7851f0c2cb149ced1eda3c33"
+      url "https://github.com/tenequm/homebrew-tap/releases/download/pond-v0.2.6/pond-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "fc5bc41118c9f23f9adc7912092c7262b2e8bbe220b920229c7c0fd4005dd272"
       define_method(:install) do
         bin.install "pond"
       end
