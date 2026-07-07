@@ -4,7 +4,7 @@
 class Pond < Formula
   desc "Lossless storage and hybrid search for sessions from any AI agent client"
   homepage "https://pond.locker/"
-  version "0.12.2"
+  version "0.13.0"
   license "Apache-2.0"
 
   livecheck do
@@ -15,19 +15,19 @@ class Pond < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.12.2/pond-aarch64-apple-darwin.tar.xz"
-      sha256 "b3aca6948e76247f1fa9edce2cfa7185d71147fbe10bb434a6aaf5681c2508c4"
+      url "https://github.com/tenequm/pond/releases/download/v0.13.0/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "71fcebbb0b1e51c0e571525a52781082fe85fea8244e582869a72a94886181d4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/tenequm/pond/releases/download/v0.12.2/pond-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8199a367d96335b2568dfc3da27d7a5ef5d604657e04908bad23d45cdb5dbf8c"
+      url "https://github.com/tenequm/pond/releases/download/v0.13.0/pond-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a322ec66bf7925cd42f9803fc22da334e9bc00d1750128ea12412f0a9f1c85bf"
     end
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.12.2/pond-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "92d9f7df1037fcd5e0ad8646dce0f9210dc93ea89f7f949e5b9688bb40475209"
+      url "https://github.com/tenequm/pond/releases/download/v0.13.0/pond-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "dab643006a089877ce19ac651f45a2a00665e50ae6edb668d04441518de44627"
     end
   end
 
