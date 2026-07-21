@@ -4,7 +4,6 @@
 class Pond < Formula
   desc "Lossless storage and hybrid search for sessions from any AI agent client"
   homepage "https://pond.locker/"
-  version "0.13.2"
   license "Apache-2.0"
 
   livecheck do
