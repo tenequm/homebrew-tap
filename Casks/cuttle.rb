@@ -35,11 +35,8 @@ cask "cuttle" do
   binary "cuttle"
 
   postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/cuttle"]
-    end
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/cuttle"] if OS.mac?
   end
 
   # No zap stanza required
-
 end
