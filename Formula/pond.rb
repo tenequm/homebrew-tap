@@ -14,7 +14,12 @@ class Pond < Formula
   end
 
   on_macos do
+    depends_on arch: :arm64
     on_arm do
+      url "https://github.com/tenequm/pond/releases/download/v0.13.2/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "1a4c6f45f3dc7ada3e291c6f2ce54ad71d040e13de58cb0d2d61307a81ba5c53"
+    end
+    on_intel do
       url "https://github.com/tenequm/pond/releases/download/v0.13.2/pond-aarch64-apple-darwin.tar.xz"
       sha256 "1a4c6f45f3dc7ada3e291c6f2ce54ad71d040e13de58cb0d2d61307a81ba5c53"
     end
