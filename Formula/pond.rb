@@ -15,23 +15,23 @@ class Pond < Formula
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.14.2/pond-aarch64-apple-darwin.tar.xz"
-      sha256 "6f64ad2a8ca101a00fc69017fd39994201780e3a0e20bb1981f0cf249514a0db"
+      url "https://github.com/tenequm/pond/releases/download/v0.14.3/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "e06195a28edb2345f7cc0cc870ef478d093a867a98990be5f3dee7dc47314f3a"
     end
     on_intel do
-      url "https://github.com/tenequm/pond/releases/download/v0.14.2/pond-aarch64-apple-darwin.tar.xz"
-      sha256 "6f64ad2a8ca101a00fc69017fd39994201780e3a0e20bb1981f0cf249514a0db"
+      url "https://github.com/tenequm/pond/releases/download/v0.14.3/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "e06195a28edb2345f7cc0cc870ef478d093a867a98990be5f3dee7dc47314f3a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/tenequm/pond/releases/download/v0.14.2/pond-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c2936333fda6c33abfeb12b0439d1d94ddb5acdcf5d92be38528c8899da4f6ab"
+      url "https://github.com/tenequm/pond/releases/download/v0.14.3/pond-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5352511f48ba464d0f6b95c18bcfe337404bef3526c32aa75873cf18aab0a5ea"
     end
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.14.2/pond-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "944fc24f93c9deb15520d304c40880168debe05c7984bb7c2dca7a8f95178b99"
+      url "https://github.com/tenequm/pond/releases/download/v0.14.3/pond-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8a44565cb3c8d58f4606005707f2787db1ccbcf62e650d0e1481d8a87c0cce57"
     end
   end
 
