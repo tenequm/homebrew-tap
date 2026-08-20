@@ -1,6 +1,6 @@
 cask "blackbox-recorder" do
-  version "0.9.1"
-  sha256 "f95751ada5757488f4b4385c0f83c581a3fc7d110ac0bcc588e86828d5b3255b"
+  version "0.9.2"
+  sha256 "ef72ec6255ecfde89354655cde20fd345411cc4b036abce21ee4af68ac6149b3"
 
   url "https://github.com/tenequm/blackbox/releases/download/v#{version}/Blackbox-#{version}.dmg"
   name "Blackbox"
