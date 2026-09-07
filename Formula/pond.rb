@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Pond < Formula
-  desc "Lossless storage, full-text search, and optional semantic search for sessions from any AI agent client"
+  desc "Lossless storage and full-text/semantic search for AI agent sessions"
   homepage "https://pond.locker/"
   license "Apache-2.0"
 
@@ -14,10 +14,12 @@ class Pond < Formula
 
   on_macos do
     # Apple Silicon only: there is no x86_64-apple-darwin build, so
-    # depends_on refuses Intel before any download is attempted.
+    # the arch dependency refuses Intel before any download is attempted.
     depends_on arch: :arm64
-    url "https://github.com/tenequm/pond/releases/download/v0.17.0/pond-aarch64-apple-darwin.tar.xz"
-    sha256 "8b187f7bc921a6fec4724fe6ed93ba86def9efa928b0e8556dbf99b1b8cebe87"
+    on_arm do
+      url "https://github.com/tenequm/pond/releases/download/v0.17.0/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "8b187f7bc921a6fec4724fe6ed93ba86def9efa928b0e8556dbf99b1b8cebe87"
+    end
   end
 
   on_linux do
