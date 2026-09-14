@@ -17,19 +17,19 @@ class Pond < Formula
     # the arch dependency refuses Intel before any download is attempted.
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.17.2/pond-aarch64-apple-darwin.tar.xz"
-      sha256 "9feb9ee2ac1a0df17e8ba6002f93fa223a065c042af0ee48fc951c29dd9ff729"
+      url "https://github.com/tenequm/pond/releases/download/v0.17.3/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "ba19eb863333eaf70e8b584ce6a20f5dcf5c9f9940513b3bab3c8e1d3041cee3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/tenequm/pond/releases/download/v0.17.2/pond-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "82298d1cdced9cc45bb110fca89b2c8767844e0faca8efd84bd42987747c8fc0"
+      url "https://github.com/tenequm/pond/releases/download/v0.17.3/pond-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c0f54473e97352e2cd45f3cc893c8f94284d4171686f3debe62e4abb0db87965"
     end
     on_arm do
-      url "https://github.com/tenequm/pond/releases/download/v0.17.2/pond-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f744319d8ed5459f8aa2f79a708bf6536e0dcbaeebefcdaa5a644bb8932842b5"
+      url "https://github.com/tenequm/pond/releases/download/v0.17.3/pond-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7021e2268348abdd44a8909ce160b823c452339ba7a6bb0a12f67daf0d1cc56b"
     end
   end
 
