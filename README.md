@@ -24,6 +24,18 @@ cask "<cask>"
   brew install --cask tenequm/tap/blackbox
   ```
 
+- **[cuttle](https://github.com/glim-sh/cuttle)** - a browser for agents that websites do not block, that keeps logins, and that a person can take over.
+
+  ```bash
+  brew install tenequm/tap/cuttle
+  ```
+
+- **[frisk](https://github.com/tenequm/frisk)** - Claude Code PreToolUse hook that gates Bash commands.
+
+  ```bash
+  brew install tenequm/tap/frisk
+  ```
+
 ### Formulae
 
 - **[pond](https://github.com/tenequm/pond)** - local session storage and retrieval for agentic clients.
