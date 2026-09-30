@@ -20,6 +20,12 @@ class Pond < Formula
       url "https://github.com/tenequm/pond/releases/download/v0.19.3/pond-aarch64-apple-darwin.tar.xz"
       sha256 "dcdbde922a1f12365f1b5fcf1bf0214096d212abb88ad49c63a6f42c401a0e7f"
     end
+    # Never downloaded: the arch dependency above stops Intel first. It is here
+    # because `brew readall` needs every platform to resolve a URL.
+    on_intel do
+      url "https://github.com/tenequm/pond/releases/download/v0.19.3/pond-aarch64-apple-darwin.tar.xz"
+      sha256 "dcdbde922a1f12365f1b5fcf1bf0214096d212abb88ad49c63a6f42c401a0e7f"
+    end
   end
 
   on_linux do
